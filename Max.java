@@ -3,20 +3,21 @@ import java.util.*;
 public class Max {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-Scanner sc=new Scanner(System.in);
+		Scanner sc=new Scanner(System.in);
 int a=sc.nextInt();
 int b=sc.nextInt();
 int c=sc.nextInt();
 int large=0;
-if(a>b)
+if((a>b)&&(a>c))
 	large=a;
-if(b>c)
+if((b>c)&&(b>a))
 	large=b;
-if(c>a)
+if((c>a)&&(c>b))
 	large=c;
 System.out.println("large:"+large);
 sc.close();
+
+
 	}
 
 }
